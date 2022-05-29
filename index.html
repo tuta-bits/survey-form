@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <title>Opinion Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='jand.css'>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Tony's Survey Form</h1>
+            <p id="description" class="description txt-cen">
+                Greatly appreciate your effort and energy to provide feedback on our platform.<br>
+                Thank you 😊!
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-unit">
+                <label id="name-label" for="name">Name:</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Enter your name..."
+                    class="form-cntl"
+                    required />
+            </div>
+            <div class="form-unit">
+                <label id="email-label" for="email">Email:</label>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Enter your Email..."
+                    class="form-cntl"
+                    required />
+            </div>
+            <div class="form-unit">
+                <label id="number-label" for="number">Age (Optional):</label>
+                <input
+                    id="number"
+                    type="number"
+                    placeholder="Age..."
+                    class="form-cntl"
+                    min="10"
+                    max="100" />
+            </div>
+            <div class="form-unit">
+                <p>Which of the following perfectly reflects your present position?</p>
+                <select id="dropdown" class="form-cntl" required name="play" title="role">
+                    <option disabled selected value>--select an option--</option>
+                    <option value="un-grad">Under-Graduate</option>
+                    <option value="grad">Graduate</option>
+                    <option value="po-grad">Post-Graduate</option>
+                    <option value="cas-work">Casual Woker</option>
+                    <option value="part-work">Part-Time Worker</option>
+                    <option value="full-work">Full-Time Worker</option>
+                    <option value="preferNo">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-unit">
+                <p>Would you recommend us to a friend?</p>
+                <label>
+                    <input
+                        name="user-reco"
+                        value="definitely"
+                        type="radio"
+                        class="input-radio"
+                        checked />
+                        Definitely
+                </label>
+                <label>
+                    <input
+                        name="user-reco"
+                        value="maybe"
+                        type="radio"
+                        class="input-radio"/>
+                        Maybe
+                </label>
+                <label>
+                    <input
+                        name="user-reco"
+                        value="not-sure"
+                        type="radio"
+                        class="input-radio" />
+                        Not sure
+                </label>
+            </div>
+            <div class="form-unit">
+                <p>
+                    Advised on what you'll like to see improved?
+                    <span class="clue">(Select all that's applicable)</span>
+                </p>
+                <label>
+                    <input
+                        name="choice"
+                        value="data-visualization"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Data Visualization
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="challenges"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Challenges
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="lab-project"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Lab Projects
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="chat-room"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Chat Room
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="videos"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Videos
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="friendly-meetups"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Friendly Meetups
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="community-forum"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Community Forum
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="wiki-links"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Wiki Links
+                </label>
+                <label>
+                    <input
+                        name="choice"
+                        value="mentoring"
+                        type="checkbox"
+                        class="input-checkbox" />
+                        Mentoring
+                </label>
+            </div>
+            <div class="form-unit">
+                <p>We'll love to hear from you</p>
+                <textarea
+                    id="comments"
+                    class="inp-textarea"
+                    name="comment"
+                    placeholder="Enter your comment here...">
+                </textarea>
+            </div>
+            <div class="form-unit">
+                <button id="submit" type="submit" class="sub-btn">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
